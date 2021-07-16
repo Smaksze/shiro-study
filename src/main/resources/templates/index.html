@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:if="${session.account != null}">
+    <span th:text="${session.account.username} + '：欢迎回来'"></span><br>
+    <a href="/logout">退出</a>
+</div>
+
+<a href="/main">main</a><br>
+<a href="/manage">manage</a><br>
+<a href="/administrator">administrator</a><br>
+</body>
+</html>
